@@ -1,1 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>PustakaBangX</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, "Times New Roman", serif;
+            background: #f7f4ee;
+            color: #292929;
+        }
+
+        header {
+            background: #202020;
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin-top: 12px;
+            font-size: 17px;
+            opacity: 0.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .intro h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .intro p {
+            line-height: 1.8;
+            color: #666;
+        }
+
+        .books {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #e5e0d7;
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        }
+
+        .card span {
+            font-size: 13px;
+            color: #999;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 40px;
+            border-top: 1px solid #ddd;
+            color: #888;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>📚 PustakaBangX</h1>
+    <p>Mengumpulkan gagasan, menyimpan renungan, meninggalkan jejak pemikiran.</p>
+</header>
+
+<div class="container">
+
+    <section class="intro">
+        <h2>Selamat Datang</h2>
+
+        <p>
+            Ini adalah ruang untuk menyimpan berbagai renungan,
+            gagasan, catatan kehidupan, dan pemikiran yang layak untuk dikenang.
+        </p>
+    </section>
+
+    <section class="books">
+
+        <div class="card">
+            <span>RENUNGAN #001</span>
+
+            <h3>
+                Dunia yang Dapat Hancur dalam Sekedip Mata
+            </h3>
+
+            <p>
+                Bencana tidak hanya mengajarkan kita tentang
+                sebab dan penanganannya, tetapi juga mengingatkan
+                bahwa dunia yang kita anggap kokoh dapat berubah
+                dalam sekejap.
+            </p>
+        </div>
+
+        <div class="card">
+            <span>SEGERA HADIR</span>
+
+            <h3>
+                Renungan Berikutnya
+            </h3>
+
+            <p>
+                Setiap gagasan yang layak direnungkan,
+                suatu hari akan menemukan tempatnya di sini.
+            </p>
+        </div>
+
+    </section>
+
+</div>
+
+<footer>
+    © 2026 PustakaBangX
+</footer>
+
+</body>
+</html>
