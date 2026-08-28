@@ -7,90 +7,170 @@
     <title>Ketika Bencana Mengingatkan Kita Bahwa Dunia Tidak Kekal - PustakaBangX</title>
 
     <style>
+
         * {
             box-sizing: border-box;
         }
 
         body {
             margin: 0;
-            background: #f7f4ee;
+            background: #f4f1ea;
             color: #292929;
             font-family: Georgia, "Times New Roman", serif;
         }
 
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 50px 22px 60px;
+        /* HEADER */
+
+        header {
+            background: #222;
+            color: white;
+            padding: 22px 20px;
+            text-align: center;
         }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+        /* HALAMAN */
+
+        .container {
+            max-width: 820px;
+            margin: auto;
+            padding: 55px 20px 70px;
+        }
+
+        /* LABEL */
 
         .label {
+            text-align: center;
             color: #888;
             font-size: 13px;
-            letter-spacing: 1.5px;
-            margin-bottom: 15px;
+            letter-spacing: 2px;
+            margin-bottom: 18px;
         }
 
+        /* JUDUL */
+
         h1 {
-            font-size: 38px;
+            text-align: center;
+            font-size: 40px;
             line-height: 1.25;
-            margin: 0 0 35px;
+            margin: 0 auto 18px;
+            max-width: 720px;
         }
+
+        .date {
+            text-align: center;
+            color: #999;
+            font-size: 13px;
+            margin-bottom: 45px;
+        }
+
+        /* ISI */
 
         .content {
             background: white;
-            padding: 40px;
+            padding: 45px 50px;
             border-radius: 12px;
-            border: 1px solid #e5e0d7;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.05);
         }
 
         .content p {
             font-size: 18px;
             line-height: 1.9;
+            text-align: justify;
             margin: 0 0 25px;
         }
 
-        .content blockquote {
-            margin: 30px 0;
-            padding: 20px 25px;
-            border-left: 4px solid #999;
-            background: #f7f4ee;
+        /* KUTIPAN AYAT */
+
+        blockquote {
+            margin: 35px 0;
+            padding: 25px 28px;
+            background: #f5f2eb;
+            border-left: 4px solid #777;
+            border-radius: 6px;
             font-size: 17px;
             line-height: 1.8;
         }
 
-        .content strong {
-            font-weight: bold;
+        /* TEKS ARAB */
+
+        .arab {
+            text-align: center;
+            direction: rtl;
+            font-size: 25px;
+            line-height: 2;
+            margin-bottom: 15px;
         }
 
-        .content em {
-            font-style: italic;
+        /* PENEKANAN */
+
+        .highlight {
+            text-align: center !important;
+            font-size: 21px !important;
+            line-height: 1.7 !important;
+            margin: 35px 10px !important;
+        }
+
+        /* PEMBATAS */
+
+        .divider {
+            width: 60px;
+            height: 1px;
+            background: #bbb;
+            margin: 40px auto;
+        }
+
+        /* TOMBOL */
+
+        .actions {
+            text-align: center;
+            margin-top: 35px;
         }
 
         .back {
             display: inline-block;
-            margin-top: 30px;
-            color: #555;
+            padding: 12px 20px;
+            background: #292929;
+            color: white;
             text-decoration: none;
+            border-radius: 6px;
             font-family: Arial, sans-serif;
             font-size: 14px;
         }
 
         .back:hover {
-            text-decoration: underline;
+            opacity: 0.85;
         }
 
+        /* FOOTER */
+
         footer {
-            margin-top: 50px;
             text-align: center;
+            margin-top: 45px;
             color: #999;
-            font-size: 14px;
+            font-size: 13px;
         }
+
+        /* HP */
 
         @media (max-width: 600px) {
 
+            header {
+                padding: 18px;
+            }
+
+            header a {
+                font-size: 16px;
+            }
+
             .container {
-                padding: 35px 15px 50px;
+                padding: 35px 12px 50px;
             }
 
             h1 {
@@ -98,18 +178,35 @@
             }
 
             .content {
-                padding: 25px 20px;
+                padding: 28px 20px;
+                border-radius: 9px;
             }
 
             .content p {
                 font-size: 17px;
-                line-height: 1.8;
+                line-height: 1.85;
             }
+
+            blockquote {
+                padding: 20px;
+                font-size: 16px;
+            }
+
+            .highlight {
+                font-size: 19px !important;
+            }
+
         }
+
     </style>
 </head>
 
 <body>
+
+<header>
+    <a href="../index.html">📚 PustakaBangX</a>
+</header>
+
 
 <div class="container">
 
@@ -120,6 +217,11 @@
     <h1>
         Ketika Bencana Mengingatkan Kita Bahwa Dunia Tidak Kekal
     </h1>
+
+    <div class="date">
+        PustakaBangX · 2026
+    </div>
+
 
     <div class="content">
 
@@ -153,15 +255,17 @@
             pertanyaan yang sering terlewatkan.</strong>
         </p>
 
-        <p>
+        <p class="highlight">
             Bukan hanya:
             <em>“Mengapa bencana ini terjadi?”</em>
         </p>
 
-        <p>
+        <p class="highlight">
             Tetapi:
             <em>“Apa yang seharusnya kita pelajari dari peristiwa ini?”</em>
         </p>
+
+        <div class="divider"></div>
 
         <p>
             Sebab sebuah peristiwa dapat memiliki sebab yang dapat
@@ -170,13 +274,23 @@
         </p>
 
         <blockquote>
+
+            <div class="arab">
+                وَظَهَرَ الْفَسَادُ فِي الْبَرِّ وَالْبَحْرِ بِمَا كَسَبَتْ
+                أَيْدِي النَّاسِ لِيُذِيقَهُم بَعْضَ الَّذِي عَمِلُوا
+                لَعَلَّهُمْ يَرْجِعُونَ
+            </div>
+
             <strong>
                 “Telah tampak kerusakan di darat dan di laut disebabkan
                 oleh perbuatan tangan manusia, agar mereka merasakan
                 sebagian dari akibat perbuatan mereka, supaya mereka kembali.”
             </strong>
+
             <br><br>
-            QS. Ar-Rum: 41
+
+            <em>QS. Ar-Rum: 41</em>
+
         </blockquote>
 
         <p>
@@ -193,7 +307,7 @@
             Perhatikan ujung ayat tersebut:
         </p>
 
-        <p>
+        <p class="highlight">
             <strong>“Agar mereka kembali.”</strong>
         </p>
 
@@ -234,12 +348,14 @@
             Lebih selamat jika kita bertanya kepada diri sendiri:
         </p>
 
-        <p>
+        <p class="highlight">
             <em>
-                “Kalau kejadian ini adalah peringatan, apa yang sedang
-                Allah peringatkan kepadaku?”
+                “Kalau kejadian ini adalah peringatan,
+                apa yang sedang Allah peringatkan kepadaku?”
             </em>
         </p>
+
+        <div class="divider"></div>
 
         <p>
             Mungkin selama ini kita merasa aman karena rumah kita
@@ -261,7 +377,7 @@
             tetapi sangat dalam:
         </p>
 
-        <p>
+        <p class="highlight">
             <strong>
                 Apa yang kita anggap kokoh ternyata tidak selalu kokoh.
             </strong>
@@ -317,7 +433,7 @@
             kuasai sepenuhnya:
         </p>
 
-        <p>
+        <p class="highlight">
             <strong>waktu.</strong>
         </p>
 
@@ -331,24 +447,22 @@
             membutuhkan waktu yang panjang.
         </p>
 
-        <p>
+        <p class="highlight">
             <strong>
                 Allah mampu mengubah keadaan dalam satu kejapan mata.
             </strong>
         </p>
 
-        <p>
-            Dan jika sebuah rumah, kota, bahkan wilayah yang luas dapat
-            berubah dalam hitungan menit, maka kita seharusnya semakin
-            memahami bahwa dunia ini bukan tempat yang kekal.
-        </p>
-
         <blockquote>
+
             <strong>
                 “Setiap sesuatu akan binasa kecuali wajah-Nya.”
             </strong>
+
             <br><br>
-            QS. Al-Qashash: 88
+
+            <em>QS. Al-Qashash: 88</em>
+
         </blockquote>
 
         <p>
@@ -419,6 +533,8 @@
             benar-benar kehilangan segalanya.
         </p>
 
+        <div class="divider"></div>
+
         <p>
             Bencana juga mengajarkan bahwa
             <strong>manusia membutuhkan satu sama lain.</strong>
@@ -480,7 +596,7 @@
             Pada akhirnya, kita tidak perlu memastikan:
         </p>
 
-        <p>
+        <p class="highlight">
             <em>“Apakah bencana ini hukuman?”</em>
         </p>
 
@@ -492,7 +608,7 @@
             Tetapi kita dapat memastikan satu hal:
         </p>
 
-        <p>
+        <p class="highlight">
             <strong>
                 Setiap peristiwa yang membuat kita semakin dekat kepada
                 Allah adalah pelajaran yang tidak boleh disia-siakan.
@@ -525,13 +641,14 @@
             bangunan runtuh.
         </p>
 
-        <p>
-            Yang lebih menyedihkan adalah ketika
+        <p class="highlight">
             <strong>
-                bangunan hati kita tetap tidak berubah setelah melihat
-                kehancuran di hadapan mata.
+                Yang lebih menyedihkan adalah ketika bangunan hati kita
+                tetap tidak berubah setelah melihat kehancuran di hadapan mata.
             </strong>
         </p>
+
+        <div class="divider"></div>
 
         <p>
             Maka ketika kita melihat bencana, mari kita melihatnya
@@ -555,7 +672,7 @@
             Karena pada akhirnya, bukan hanya bangunan yang akan hancur.
         </p>
 
-        <p>
+        <p class="highlight">
             <strong>
                 Dunia ini seluruhnya akan berakhir.
             </strong>
@@ -584,8 +701,10 @@
             Selamatkan pula diri kita untuk kehidupan yang tidak berakhir.
         </p>
 
-        <p style="text-align: center; font-size: 22px; margin-top: 40px;">
-            <strong>اللهم أحسن خاتمتنا</strong>
+        <div class="divider"></div>
+
+        <p class="arab">
+            اللهم أحسن خاتمتنا
         </p>
 
         <p>
@@ -595,15 +714,19 @@
             sebab kami semakin dekat kepada-Mu.
         </p>
 
-        <p style="text-align: center;">
+        <p style="text-align:center !important;">
             <strong>Aamiin.</strong>
         </p>
 
     </div>
 
-    <a class="back" href="../index.html">
-        ← Kembali ke PustakaBangX
-    </a>
+
+    <div class="actions">
+        <a class="back" href="../index.html">
+            ← Kembali ke PustakaBangX
+        </a>
+    </div>
+
 
     <footer>
         © 2026 PustakaBangX
